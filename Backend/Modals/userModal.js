@@ -14,7 +14,7 @@ const UserSchama=mongoose.Schema({
         required:true
     },
     lastName:{
-        tyep:String,
+        type:String,
         required:true
     },
     isAdmin:{

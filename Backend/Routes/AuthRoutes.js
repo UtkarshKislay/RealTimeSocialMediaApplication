@@ -1,5 +1,5 @@
 import express from 'express';
-import { registerUser } from '../../../reattimeserver/Controller/AuthController';
+import { registerUser } from '../Controller/AuthController.js';
 
 const router=express.Router();
 

@@ -2,8 +2,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-import authRouter from './Routes/AuthRoutes'
-
+import authRouter from './Routes/AuthRoutes.js';
+import userRouter from './Routes/UserRoutes.js';
+import postRouter from './Routes/postRoute.js';
 const app = express();
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));      
@@ -26,4 +27,6 @@ mongoose
 
 
   app.use('/auth',authRouter);
+  app.use('/user',userRouter);
+  app.use('/post',postRouter);
 
